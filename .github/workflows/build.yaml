@@ -6,8 +6,8 @@ const octokit = new Octokit({
 
 await octokit.request('GET /repos/{owner}/{repo}/commits/{ref}/status',
 {
-  owner: Nizar-dev-renovate-read-only,
-  repo: sc17,
-  ref: REF
+  owner: 'OWNER',
+  repo: 'REPO',
+  ref: 'REF'
 }
 )
