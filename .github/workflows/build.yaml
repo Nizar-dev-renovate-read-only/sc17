@@ -1,11 +1,13 @@
 // Octokit.js
 // https://github.com/octokit/core.js#readme
 const octokit = new Octokit({
-  auth: 'YOUR-TOKEN'
+  auth:'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'
 })
 
-await octokit.request('GET /repos/{owner}/{repo}/commits/{ref}/status', {
-  owner: 'OWNER',
-  repo: 'REPO',
+await octokit.request('GET /repos/{owner}/{repo}/commits/{ref}/status',
+{
+  owner: 'Nizar-dev-renovate-read-only',
+  repo: 'sc17',
   ref: 'REF'
-})
+}
+)
